@@ -234,3 +234,23 @@ body.dark .tech-card h4 {
 body.dark .tech-card p {
     color: #e5e7eb;
 }
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding: 15px 40px;
+    background: #111;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-resume {
+    margin-left: auto;
+    background: #fff;
+    color: #111 !important;
+    padding: 6px 14px;
+    border-radius: 6px;
+}

@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
+{% load static %}
+
 
 {% block title %}Education | Portfolio{% endblock %}
-
 
 {% block content %}
 
@@ -55,5 +56,45 @@
     <b>MediShelf Monitor</b><br>
     Medicine monitoring system built using Django and SQLite.
 </div>
+
+<h2>Certifications</h2>
+<ul class="cert-list">
+
+    <!-- Official links -->
+    <li>
+        Basics of Python – Great Learning (Jul 2024)
+        <a href="https://www.mygreatlearning.com/certificate/FDFKLRPP?referrer_code=GLQ9HCO431AG0"
+           target="_blank">[View]</a>
+    </li>
+
+    <li>
+        Prompt Engineering – Great Learning (Jul 2024)
+        <a href="https://www.mygreatlearning.com/certificate/PTTJYYHU?referrer_code=GLQ9HCO431AG0"
+           target="_blank">[View]</a>
+    </li>
+
+    <!-- Image based certificates (STATIC) -->
+    <li>
+        Introduction to Generative AI – Google Cloud
+        <a href="{% static 'certificate/genai.png' %}" target="_blank">[View]</a>
+    </li>
+
+    <li>
+        Namaste JavaScript – NamasteDev (Akshay Saini)
+        <a href="{% static 'certificate/Javascript.png' %}" target="_blank">[View]</a>
+    </li>
+
+    <li>
+        Python Skill Quiz – Hackveda (Mar 2025)
+        <a href="{% static 'certificate/pyquiz.png' %}" target="_blank">[View]</a>
+    </li>
+
+    <li>
+        Resume Building Certificate – Presidency College (Oct 2024)
+        <a href="{% static 'certificate/resume.png' %}" target="_blank">[View]</a>
+    </li>
+
+</ul>
+
 
 {% endblock %}
